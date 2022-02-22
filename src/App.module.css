@@ -1,0 +1,11 @@
+.wrapper {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F7FA;
+    display: grid;
+    grid-template-areas: 'h h'
+                        's m';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 355px 1fr;
+    gap: 50px;
+}

@@ -1,0 +1,10 @@
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.plane {
+    width: 60px;
+    height: 60px;
+}
