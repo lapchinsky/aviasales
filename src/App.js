@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Sidefilter from "./components/Sidefilter/Sidefilter";
 import Main from "./components/Main/Main";
 import {connect} from "react-redux";
-import {getTickets, mainToggle} from "./store/ActionCreators/actionCreators";
+import {getTickets, mainToggle, toggleStops} from "./store/ActionCreators/actionCreators";
 
 function App(props) {
 
@@ -27,6 +27,8 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         toggleButtons: id => dispatch(mainToggle(id)),
+        toggleStops: id => dispatch(toggleStops(id)),
+        sortedStoppages: id => dispatch(sortedStoppages(id)),
         gettingTickets: () => dispatch(getTickets())
     }
 }

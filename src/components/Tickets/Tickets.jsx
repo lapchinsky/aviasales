@@ -3,7 +3,8 @@ import styles from './Tickets.module.css'
 import Ticket from "../Ticket/Ticket";
 import {getTickets} from "../../store/ActionCreators/actionCreators";
 import {connect} from "react-redux";
-import plane from '../../Images/plane.png'
+import Loader from "../Loader/Loader";
+
 
 const Tickets = ({gettingTickets, tickets}) => {
 
@@ -14,7 +15,7 @@ const Tickets = ({gettingTickets, tickets}) => {
     return (
         <div className={styles.tickets}>
             {tickets.length !== 0 ? tickets.slice(0, 4).map(ticket => <Ticket key={ticket.price} ticket={ticket}/>) :
-                <div style={{display: 'flex', justifyContent: 'center', alignContent: 'center' , width: 462, height: 184}}><img style={{width: 80, height: 80}} src={plane} alt="loading"/></div> }
+                <div style={{width: 80, height: 85}}><Loader /></div>}
         </div>
     )
 }

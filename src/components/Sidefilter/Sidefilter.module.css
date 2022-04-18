@@ -18,3 +18,13 @@
     flex-direction: column;
     padding: 20px 0 0 20px;
 }
+
+@media  (max-width: 870px) {
+    .filter {
+        width: 20vw;
+        height: 25vw;
+    }
+    .header {
+        padding: 7px 0 0 7px;
+    }
+}

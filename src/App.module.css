@@ -9,3 +9,17 @@
     grid-template-columns: 355px 1fr;
     gap: 50px;
 }
+
+@media  (max-width: 950px) {
+    .wrapper {
+        grid-template-columns: auto 1fr;
+        padding-left: 5vw;
+    }
+}
+
+@media  (max-width: 870px) {
+    .wrapper {
+        grid-template-columns: auto 1fr;
+        padding-left: 5vw;
+    }
+}
