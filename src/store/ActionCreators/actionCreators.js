@@ -33,7 +33,7 @@ export function toggleState(tickets) {
 }
 
 export function toggleTickets(id) {
-    let tickets = store.getState().TicketReducer.baseTickets
+    let tickets = store.getState().TicketReducer.tickets
     return (dispatch) => {
         if (id === 'cheapest') {
             tickets.sort(function (a, b) {

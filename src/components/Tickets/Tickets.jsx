@@ -6,7 +6,7 @@ import {connect} from "react-redux";
 import Loader from "../Loader/Loader";
 
 
-const Tickets = ({gettingTickets, tickets}) => {
+const Tickets = ({gettingTickets, tickets, number}) => {
 
     useEffect(() => {
         gettingTickets()
@@ -14,7 +14,7 @@ const Tickets = ({gettingTickets, tickets}) => {
 
     return (
         <div className={styles.tickets}>
-            {tickets.length !== 0 ? tickets.slice(0, 4).map(ticket => <Ticket key={ticket.price} ticket={ticket}/>) :
+            {tickets.length !== 0 ? tickets.slice(0, number).map(ticket => <Ticket key={ticket.price} ticket={ticket}/>) :
                 <div style={{width: 80, height: 85}}><Loader /></div>}
         </div>
     )

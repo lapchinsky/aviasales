@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './Showmore.module.css'
 
-const Showmore = props => {
+const Showmore = ({showMore}) => {
     return (
         <div className={styles.showmore}>
-            <button>ПОКАЗАТЬ ЕЩЕ 5 БИЛЕТОВ</button>
+            <button onClick={() => showMore()}>ПОКАЗАТЬ ЕЩЕ 5 БИЛЕТОВ</button>
         </div>
     )
 }
